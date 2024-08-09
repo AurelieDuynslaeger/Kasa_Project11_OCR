@@ -1,9 +1,10 @@
-@use './variables' as v;
+@use '../../stylesheet/variables' as v;
+
 .banner_home {
-    width: 340px;
+    width: 100%;
     height: 110px;
     margin: auto;
-    background-image: url("../assets/banner_home.png");
+    background-image: url("../../assets/banner_home.png");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -31,6 +32,11 @@
         font-size: 1.5rem;
         z-index: 2;
         position: relative;
-        width: 75%;
+        width: 78%;
+        text-shadow: 
+            -1px -1px 0 #000,  
+             1px -1px 0 #000,
+            -1px  1px 0 #000,
+             1px  1px 0 #000;
     }
 }

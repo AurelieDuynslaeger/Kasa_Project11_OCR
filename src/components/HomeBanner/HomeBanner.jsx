@@ -1,4 +1,5 @@
-import "../stylesheet/homebanner.scss"
+import "../HomeBanner/homebanner.scss"
+
 const HomeBanner = () => {
   return (
    <div className="banner_home">

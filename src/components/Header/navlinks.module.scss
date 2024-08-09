@@ -1,4 +1,4 @@
-@use './variables' as v;
+@use '../../stylesheet/variables' as v;
 
 nav{
     font-family: v.$font-montserrat;
@@ -7,10 +7,9 @@ nav{
         gap: 1rem;
         li {
             list-style: none;
-            text-transform: uppercase;
-            font-weight: 700;
+            text-transform: capitalize;
+            font-weight: 500;
             color: v.$text-dark;
         }
     }
-   
 }
