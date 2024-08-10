@@ -1,8 +1,7 @@
-import Dropdown from "../../components/Dropdown"
+import Dropdown from "../../components/Dropdown/Dropdown"
 import Header from "../../components/Header/Header"
 import ImgBanner from "../../components/ImgBanner/ImgBanner"
 import Footer from "../../components/Footer/Footer"
-import "./about.scss"
 
 const about_p = [
   {

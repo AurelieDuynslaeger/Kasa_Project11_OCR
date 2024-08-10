@@ -3,7 +3,6 @@ import ImgBanner from "../../components/ImgBanner/ImgBanner"
 import RentCard from "../../components/RentCard/RentCard"
 import Footer from "../../components/Footer/Footer"
 import logements from "../../constants/logements.json"
-import "./home.scss"
 
 const Home = () => {
   return (

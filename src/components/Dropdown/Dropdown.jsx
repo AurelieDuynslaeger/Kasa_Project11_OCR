@@ -1,6 +1,6 @@
 import { useState } from "react"
 import PropTypes from "prop-types"
-import "../stylesheet/main.scss"
+import "../Dropdown/dropdown.scss"
 import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
 
 const Dropdown = ({ title, content, items }) => {
