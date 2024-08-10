@@ -1,10 +1,9 @@
 @use '../../stylesheet/variables' as v;
 
-.banner_home {
-    width: 100%;
+.banner_kasa {
+    width: 90%;
     height: 110px;
-    margin: auto;
-    background-image: url("../../assets/banner_home.png");
+    margin: 1.5rem auto;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;

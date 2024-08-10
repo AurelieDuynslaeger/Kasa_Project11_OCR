@@ -6,7 +6,7 @@ const Footer = () => {
     return (
         <footer>
             <Logo url={kasa_footerlogo}/>
-            <p>&copy; 2024 Kasa. Tous droits réservés.</p>
+            <p>&copy; 2024 Kasa. All rights reserved.</p>
         </footer>
     )
 }

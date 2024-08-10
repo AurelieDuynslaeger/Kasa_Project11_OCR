@@ -10,6 +10,16 @@ nav{
             text-transform: capitalize;
             font-weight: 500;
             color: v.$text-dark;
+            a{
+                text-decoration: none;
+                &.active{
+                    text-decoration: underline;
+                    font-weight: 700;
+                }
+                &:visited {
+                    color: v.$text-dark; // Même couleur que le lien non visité
+                }
+            }
         }
     }
 }
