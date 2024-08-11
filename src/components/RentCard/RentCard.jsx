@@ -1,5 +1,4 @@
 import PropTypes from 'prop-types'
-
 import "../RentCard/rentcard.scss"
 
 const RentCard = ({ title, image, action }) => {

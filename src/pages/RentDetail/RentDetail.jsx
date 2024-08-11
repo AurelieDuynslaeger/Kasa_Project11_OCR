@@ -1,8 +1,12 @@
 import { useParams } from 'react-router-dom';
 import Dropdown from "../../components/Dropdown/Dropdown"
 import Tag from "../../components/Tag/Tag"
+import Rating from "../../components/Rating"
 import logements from "../../constants/logements.json"
 import Header from '../../components/Header/Header';
+import RentCarousel from '../../components/RentCarousel/RentCarousel';
+
+
 
 const RentDetail = () => {
   //récup id dans l'url (rent card cliquée sur Home)
@@ -18,10 +22,7 @@ const RentDetail = () => {
   return (
     <div className="container">
       <Header/>
-      <div>
-        {/* Carousel Rent */}
-        <img src={rent.cover} alt="" /> 
-      </div>
+      <RentCarousel images={rent.pictures} />
       <div className='rent_header'>
         <div className='rent_location'>
           <h1>{rent.title}</h1>
@@ -34,7 +35,8 @@ const RentDetail = () => {
         </div>
       </div>
       <div className='rent_rating_and_host'>
-        <div className='rating'>rating</div>
+      {/* parseInt : convertit la chaîne de caractères rent.rating en un nombre entier en utilisant la base décimale (base 10)=> la chaîne est interprétée comme un chiffre entre 0 à 9. */}
+      <Rating rating={parseInt(rent.rating, 10)} />
         <div className='host_infos'>
           <p className='host_name'>{rent.host.name}</p>
           <img src={rent.host.picture} alt="host profile picture" className='host_picture'/>

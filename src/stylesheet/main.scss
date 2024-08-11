@@ -16,7 +16,6 @@
 
 .rent_header{
   font-family: v.$font-montserrat;
-  
   .rent_location{
     h1{
       font-size: 1rem;
@@ -36,27 +35,35 @@
 }
 
 .rent_rating_and_host{
+  width: 100%;
   display: flex;
   align-items: center;
+  justify-content: space-between;
   font-family: v.$font-montserrat;
   .host_infos{
     display: flex;
-   
-    .host_name{
-      width: 20%;
-    }
-    .host_picture{
-      border-radius: 50px;
-      width: 20%;
-    }
+    align-items: center;
+    justify-content: space-around;
+    flex-basis: 30%;
+      .host_name{
+      width: 50%;
+      font-size: 0.8rem;
+      }
+      .host_picture{
+        border-radius: 50px;
+        width: 40%;
+      }
   }
   .rating{
     flex-basis: 70%;
+    svg{
+      color: v.$color-primary;
+    }
   }
 }
 
 .rent_description_equipments{
-
+  
 }
 
 

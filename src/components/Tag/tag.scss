@@ -1,7 +1,7 @@
 @use '../../stylesheet/variables' as v;
 
 .tag {
-    width: 30%;
+    width: fit-content;
     margin: 1rem 0;
     background-color: v.$color-primary;
     border-radius: 10px;
@@ -10,8 +10,9 @@
     justify-content: center;
     align-items: center;
     p {
-      font-size: 0.6rem;
+      font-size: 0.5rem;
       color: v.$text-light;
       font-family: v.$font-montserrat;
+      font-weight: 600;
     }
   }
