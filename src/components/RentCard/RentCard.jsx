@@ -15,7 +15,6 @@ const RentCard = ({ title, image, action }) => {
 }
 
 RentCard.propTypes = {
-    id: PropTypes.string.isRequired,
     title: PropTypes.string.isRequired,
     image: PropTypes.string.isRequired,
     action: PropTypes.func.isRequired,
