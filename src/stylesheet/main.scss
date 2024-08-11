@@ -14,5 +14,50 @@
   }
 }
 
+.rent_header{
+  font-family: v.$font-montserrat;
+  
+  .rent_location{
+    h1{
+      font-size: 1rem;
+      color: v.$color-primary;
+      font-weight: 500;
+    }
+    h2{
+      font-size: 0.7rem;
+      font-weight: 400;
+    }
+  }
+  .rent_tags{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+}
+
+.rent_rating_and_host{
+  display: flex;
+  align-items: center;
+  font-family: v.$font-montserrat;
+  .host_infos{
+    display: flex;
+   
+    .host_name{
+      width: 20%;
+    }
+    .host_picture{
+      border-radius: 50px;
+      width: 20%;
+    }
+  }
+  .rating{
+    flex-basis: 70%;
+  }
+}
+
+.rent_description_equipments{
+
+}
+
 
   
