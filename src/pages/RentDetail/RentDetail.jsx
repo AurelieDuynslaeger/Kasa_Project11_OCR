@@ -5,6 +5,7 @@ import Rating from "../../components/Rating"
 import logements from "../../constants/logements.json"
 import Header from '../../components/Header/Header';
 import RentCarousel from '../../components/RentCarousel/RentCarousel';
+import Footer from '../../components/Footer/Footer';
 
 
 
@@ -46,6 +47,7 @@ const RentDetail = () => {
         <Dropdown title='Description' content={rent.description}/>
         <Dropdown title='Equipements' items={rent.equipments}/>
       </div>
+      <Footer/>
     </div>
   )
 }
