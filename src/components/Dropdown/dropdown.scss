@@ -49,4 +49,8 @@
             list-style-type:none;
           }
       }
+
+      @media (min-width: v.$md-breakpoint) {
+        width: 80%;
+      }
   }

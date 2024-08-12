@@ -11,10 +11,20 @@ footer {
     justify-content: center;
     gap: 0.5rem;
     padding: 1rem;
+    text-align: center;
     p {
         font-family: v.$font-montserrat;
         color: v.$text-light;
         font-size: 0.8rem;
         width: 35%;
     }
+    @media (min-width: v.$md-breakpoint) {
+        p {
+            width: 50%;
+        }
+      }
+    
+      @media (min-width: v.$lg-breakpoint) {
+        flex-basis: 30%;
+      }
 }
