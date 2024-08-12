@@ -17,14 +17,16 @@ const Home = () => {
         <ImgBanner imageUrl="../src/assets/banner_home.png" 
         title="Chez vous, partout et ailleurs"/>
         <div className="main">
-          {logements.map((rent) => (
-            <RentCard
-              key={rent.id}
-              title={rent.title}
-              image={rent.cover}
-              action={() => handleClick(rent.id)}
-            />
-          ))}
+          <div className="rents_container">
+            {logements.map((rent) => (
+              <RentCard
+                key={rent.id}
+                title={rent.title}
+                image={rent.cover}
+                action={() => handleClick(rent.id)}
+              />
+            ))}
+          </div>
         </div>
         <Footer/>
     </div>

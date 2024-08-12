@@ -1,9 +1,8 @@
 @use '../../stylesheet/variables' as v;
 
 .banner_kasa {
-    width: 90%;
     height: 110px;
-    margin: 1.5rem auto;
+    margin: 1.5rem 2rem;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -38,4 +37,21 @@
             -1px  1px 0 #000,
              1px  1px 0 #000;
     }
+
+    @media (min-width: v.$md-breakpoint) {
+        height: 160px;
+        justify-content: center;
+        h1{
+            width: 100%;
+            text-align: center;
+            font-size: 1.8rem;
+        }
+      }
+    
+      @media (min-width: v.$lg-breakpoint) {
+        height: 210px;
+        h1{
+            font-size: 2rem;
+        }
+      }
 }

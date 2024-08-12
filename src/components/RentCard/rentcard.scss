@@ -39,4 +39,12 @@
       margin: 0;
       z-index: 2;
     }
+
+    @media (min-width: v.$md-breakpoint) {
+      flex-basis: 45%;
+    }
+  
+    @media (min-width: v.$lg-breakpoint) {
+      flex-basis: 30%;
+    }
   }
