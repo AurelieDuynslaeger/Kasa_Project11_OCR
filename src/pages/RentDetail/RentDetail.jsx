@@ -1,4 +1,4 @@
-import { useParams } from 'react-router-dom';
+import { useParams, useNavigate } from 'react-router-dom';
 import Dropdown from "../../components/Dropdown/Dropdown"
 import Tag from "../../components/Tag/Tag"
 import Rating from "../../components/Rating"
@@ -16,9 +16,15 @@ const RentDetail = () => {
   //on recherche dans les logements, le logement en question pour utiliser ses infos sur la page de détail
   const rent = logements.find((item) => item.id === id);
 
-   //si le logement n'existe pas, on peut afficher un message ou rediriger l'utilisateur
+  const navigate = useNavigate();
+
+
+   //si le logement n'existe pas, on redirige l'user vers la 404
    if (!rent) {
-    return <div>Logement non trouvé.</div>;
+    //remplace l'url par le catch-all
+    navigate('*', { replace: true });
+    //ne rend pas le composant si le logement n'existe pas
+    return null;
   }
 
   return (
