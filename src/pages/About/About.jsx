@@ -31,13 +31,15 @@ const About = () => {
         title=""
       />
       <div className="main">
-        {about_p.map((item, index) => (
-          <Dropdown
-            key={index}
-            title={item.title}
-            content={item.paragraph}
-          />
-        ))}
+        <div className="about_dropdowns">
+          {about_p.map((item, index) => (
+            <Dropdown
+              key={index}
+              title={item.title}
+              content={item.paragraph}
+            />
+          ))}
+        </div>
       </div>
       <Footer />
     </div>
