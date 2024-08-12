@@ -1,15 +1,12 @@
 //fonts
 @import url(https://fonts.bunny.net/css?family=montserrat:400,500,700);
-
 //300 normal
 //400 medium
 //700 bold
-
 $font-montserrat : 'Montserrat', sans-serif;
 
 
 //colors
-
 //red
 $color-primary : #FF6060;
 //grey
@@ -19,11 +16,7 @@ $text-dark : #000000;
 //white
 $text-light : #FFFFFF;
 
-//linear gradient pour les cartes logement rouge + linear gradient
-//drop shadows sur l'image du banner
-
 //breakpoints
-$xs-breakpoint : 600px;
-$sm-breakpoint: 768px;
-$md-breakpoint: 992px;
-$lg-breakpoint: 1200px;
+$md-breakpoint: 768px;
+$lg-breakpoint: 1024px;
+

@@ -1,4 +1,12 @@
+@use '../../stylesheet/variables' as v;
 
 img{
     width: 30%;
+    @media (min-width: v.$md-breakpoint) {
+        width: 20%;
+      }
+    
+      @media (min-width: v.$lg-breakpoint) {
+        width: 12%;
+      }
 }
