@@ -12,24 +12,27 @@ const Home = () => {
     navigate(`/rent/${id}`)
   }
   return (
+    <>
+   
     <div className='container'>
-        <Header/>
-        <ImgBanner imageUrl="../src/assets/banner_home.png" 
-        title="Chez vous, partout et ailleurs"/>
-        <div className="main">
-          <div className="rents_container">
-            {logements.map((rent) => (
-              <RentCard
-                key={rent.id}
-                title={rent.title}
-                image={rent.cover}
-                action={() => handleClick(rent.id)}
-              />
-            ))}
-          </div>
+      <Header/>
+      <ImgBanner imageUrl="../src/assets/banner_home.png" 
+      title="Chez vous, partout et ailleurs"/>
+      <div className="main">
+        <div className="rents_container">
+          {logements.map((rent) => (
+            <RentCard
+              key={rent.id}
+              title={rent.title}
+              image={rent.cover}
+              action={() => handleClick(rent.id)}
+            />
+          ))}
         </div>
-        <Footer/>
+      </div>
     </div>
+    <Footer/>
+    </>
   )
 }
 

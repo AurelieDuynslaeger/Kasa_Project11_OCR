@@ -24,7 +24,8 @@ const about_p = [
 
 const About = () => {
   return (
-    <div className='container'>
+    <>
+     <div className='container'>
       <Header />
       <ImgBanner
         imageUrl="../src/assets/banner_about.png"
@@ -41,8 +42,10 @@ const About = () => {
           ))}
         </div>
       </div>
-      <Footer />
     </div>
+    <Footer />
+    </>
+   
   );
 }
 

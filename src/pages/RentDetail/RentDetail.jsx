@@ -28,34 +28,39 @@ const RentDetail = () => {
   }
 
   return (
+    <>
     <div className="container">
       <Header/>
       <RentCarousel images={rent.pictures} />
-      <div className='rent_header'>
-        <div className='rent_location'>
-          <h1>{rent.title}</h1>
-          <h2>{rent.location}</h2>
+      <div className="main">
+        <div className='rent_header'>
+          <div className='rent_location'>
+            <h1>{rent.title}</h1>
+            <h2>{rent.location}</h2>
+          </div>
+          <div className='rent_tags'>
+          {rent.tags.map((tag, index) => (
+              <Tag key={index} name={tag} />
+            ))}
+          </div>
         </div>
-        <div className='rent_tags'>
-        {rent.tags.map((tag, index) => (
-            <Tag key={index} name={tag} />
-          ))}
+        <div className='rent_rating_and_host'>
+        {/* parseInt : convertit la chaîne de caractères rent.rating en un nombre entier en utilisant la base décimale (base 10)=> la chaîne est interprétée comme un chiffre entre 0 à 9. */}
+        <Rating rating={parseInt(rent.rating, 10)} />
+          <div className='host_infos'>
+            <p className='host_name'>{rent.host.name}</p>
+            <img src={rent.host.picture} alt="host profile picture" className='host_picture'/>
+          </div>
+        </div>
+        <div className='rent_description_equipments'>
+          <Dropdown title='Description' content={rent.description}/>
+          <Dropdown title='Equipements' items={rent.equipments}/>
         </div>
       </div>
-      <div className='rent_rating_and_host'>
-      {/* parseInt : convertit la chaîne de caractères rent.rating en un nombre entier en utilisant la base décimale (base 10)=> la chaîne est interprétée comme un chiffre entre 0 à 9. */}
-      <Rating rating={parseInt(rent.rating, 10)} />
-        <div className='host_infos'>
-          <p className='host_name'>{rent.host.name}</p>
-          <img src={rent.host.picture} alt="host profile picture" className='host_picture'/>
-        </div>
-      </div>
-      <div className='rent_description_equipments'>
-        <Dropdown title='Description' content={rent.description}/>
-        <Dropdown title='Equipements' items={rent.equipments}/>
-      </div>
-      <Footer/>
     </div>
+    <Footer/>
+    </>
+    
   )
 }
 

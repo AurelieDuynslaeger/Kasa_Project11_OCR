@@ -10,7 +10,7 @@
     padding: 1rem;
     border-radius: 10px;
     color: v.$text-light;
-    margin: 0.5rem auto;
+    margin: 1.5rem auto;
     position: relative;
     &::before {
         content: '';
@@ -35,7 +35,7 @@
     font-family: v.$font-montserrat;
       padding: 0.5rem 1rem;
       border-radius: 10px;
-      font-size: 0.8rem;
+      font-size: 1.6rem;
       margin: 0;
       z-index: 2;
     }
