@@ -6,6 +6,7 @@ import logements from "../../constants/logements.json"
 import Header from '../../components/Header/Header';
 import RentCarousel from '../../components/RentCarousel/RentCarousel';
 import Footer from '../../components/Footer/Footer';
+import "../RentDetail/rentdetail.scss"
 
 
 

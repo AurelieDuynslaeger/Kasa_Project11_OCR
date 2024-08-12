@@ -16,10 +16,10 @@ ImgBanner.propTypes = {
   title: PropTypes.string,
 };
 
-ImgBanner.defaultProps = {
-  //banner accueil par défaut
-  imageUrl: "", 
-  //pas de titre par défaut
-  title: '', 
-};
+// ImgBanner.defaultProps = {
+//   //banner accueil par défaut
+//   imageUrl: "", 
+//   //pas de titre par défaut
+//   title: '', 
+// };
 export default ImgBanner
