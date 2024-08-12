@@ -4,7 +4,7 @@ nav{
     font-family: v.$font-montserrat;
     ul {
         display: flex;
-        gap: 1rem;
+        gap: 1.5rem;
         li {
             list-style: none;
             text-transform: capitalize;
@@ -23,12 +23,12 @@ nav{
                 }
 
                 @media (min-width: v.$md-breakpoint) {
-                    font-size: 1rem;
-                text-transform: capitalize;
+                    font-size: 1.8rem;
+                    text-transform: capitalize;
                   }
                 
                   @media (min-width: v.$lg-breakpoint) {
-                    font-size: 1.2rem;
+                    font-size: 2.4rem;
                   }
             }
         }

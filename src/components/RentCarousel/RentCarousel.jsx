@@ -34,9 +34,14 @@ const RentCarousel = ({ images }) => {
                 </>
             )}
             {images.length > 0 ? (
-                <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+                <>
+                    <img src={images[currentIndex]} alt={`Image ${currentIndex + 1}`} />
+                    <div className="carousel_indicator">
+                        {currentIndex + 1} / {images.length}
+                    </div>
+                </>
             ) : (
-                <div>No images available</div>
+                <div>Aucune image disponible</div>
             )}
         </div>
     );

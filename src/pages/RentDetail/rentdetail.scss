@@ -1,9 +1,6 @@
 @use '../../stylesheet/variables' as v;
 
-.main {
-  min-height: auto;
-  margin: 2rem auto;
-  padding-bottom: 8rem; 
+.rent_infos{
   .rent_header{
     font-family: v.$font-montserrat;
     width: 90%;
@@ -25,8 +22,29 @@
       align-items: center;
       gap: 0.5rem;
     }
-  }
   
+    @media (min-width: v.$md-breakpoint) {
+      .rent_location{
+        h1{
+          font-size: 2.8rem;
+        }
+        h2{
+          font-size: 1.6rem;
+        }
+      }
+    }
+  
+    @media (min-width: v.$lg-breakpoint) {
+      .rent_location{
+        h1{
+          font-size: 3.6rem;
+        }
+        h2{
+          font-size: 1.8rem;
+        }
+      }
+    }
+  } 
   .rent_rating_and_host{
     width: 90%;
     margin: auto;
@@ -39,27 +57,74 @@
       align-items: center;
       justify-content: space-around;
       flex-basis: 30%;
+      order: 2;
         .host_name{
-        width: 50%;
-        font-size: 1.2rem;
-        color: v.$color-primary;
-        }
+          flex-basis: 60%;
+          font-size: 1.2rem;
+          color: v.$color-primary;
+          }
         .host_picture{
           border-radius: 50px;
-          width: 40%;
+          flex-basis: 40%;
         }
     }
     .rating{
       flex-basis: 70%;
+      display: flex;
+      order: 1;
+      gap: 0.5rem;
       svg{
         color: v.$color-primary;
         font-size: 1.5rem;
       }
     }
-  }
   
-  .rent_description_equipments{
+    @media (min-width: v.$md-breakpoint) {
+     flex-direction: column;
+     align-items: flex-end;
+     .host_infos{
+      flex-basis: auto;
+      display: flex;
+      justify-content: end;
+      order: 1;
+        .host_name{
+          font-size: 1.8rem;
+          flex-basis: 40%;
+          }
+        .host_picture{
+          border-radius: 50px;
+          flex-basis: 20%;
+        }
+      }
+      .rating{
+        order: 2;
+        flex-basis: auto;
+        display: flex;
+        svg{
+          color: v.$color-primary;
+          font-size: 1.8rem;
+        }
+      }
+    }
+  }
+  @media (min-width: v.$md-breakpoint) {
     width: 90%;
     margin: auto;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    .rent_header, .rent_rating_and_host{
+      flex-basis: 50%;
+    }
+   }
+}
+
+.rent_description_equipments{
+  width: 90%;
+  margin: auto;
+  @media (min-width: v.$md-breakpoint) {
+   display: flex;
+   justify-content: space-between;
   }
 }
+

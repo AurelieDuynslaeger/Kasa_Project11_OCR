@@ -24,8 +24,8 @@
     transform: translateY(-50%);
     background: transparent;
     border: none;
-    color: white;
-    font-size: 1.5rem;
+    color: v.$text-light;
+    font-size: 1.8rem;
     cursor: pointer;
     padding: 0.5rem;
     z-index: 10;
@@ -38,5 +38,23 @@
     &.next {
         right: 5px;
     }
+  }
+  .carousel_indicator{
+    display: hidden;
+  }
+  @media (min-width: v.$md-breakpoint) {
+    height: 360px;
+    .carousel_indicator{
+      font-family: v.$font-montserrat;
+      font-size: 2rem;
+      position: absolute;
+      bottom: 5%;
+      transform: translateY(-50%);
+      color: v.$text-light;
+      z-index: 10;
+    }
+  }
+  @media (min-width: v.$lg-breakpoint) {
+  height: 415px;
   }
 }

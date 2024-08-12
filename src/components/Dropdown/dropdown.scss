@@ -1,10 +1,8 @@
 @use '../../stylesheet/variables' as v;
 
-//dropdowns
 .dropdown {
     width: 100%;
     margin: 1rem 0;
-   
     .dropdown_btn {
         display: flex;
         justify-content: space-between;
@@ -22,35 +20,31 @@
         &:focus {
           outline: none;
         }
-
         .arrowDown, .arrowUp {
           margin-left: 0.5rem;
           font-size: 1.4rem;
           transition: transform 0.3s ease;
       }
     }
-
-      .dropdown_content {
-        margin: 0;
-        padding: 0.75rem;
-        background-color: v.$color-bg;
-        font-family: v.$font-montserrat;
-        font-size: 1.2rem;
-        border-radius: 5px;
-        list-style: none;
-        .dropdown_item {
-            padding: 0.5rem 0;
-            &:last-child {
-              border-bottom: none;
-            }
-           
-          }
-          ul {
-            list-style-type:none;
-          }
+    .dropdown_content {
+      margin: 0;
+      padding: 0.75rem;
+      background-color: v.$color-bg;
+      font-family: v.$font-montserrat;
+      font-size: 1.2rem;
+      border-radius: 5px;
+      list-style: none;
+      .dropdown_item {
+        padding: 0.5rem 0;
+        &:last-child {
+          border-bottom: none;
+        }
       }
-
-      @media (min-width: v.$md-breakpoint) {
-        width: 80%;
+      ul {
+        list-style-type:none;
       }
+    }
+    @media (min-width: v.$md-breakpoint) {
+      flex-basis: 48%;
+    }
   }

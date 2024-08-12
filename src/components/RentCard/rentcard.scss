@@ -32,7 +32,7 @@
         z-index: 1;
     }
     h2 {
-    font-family: v.$font-montserrat;
+      font-family: v.$font-montserrat;
       padding: 0.5rem 1rem;
       border-radius: 10px;
       font-size: 1.6rem;
@@ -43,7 +43,6 @@
     @media (min-width: v.$md-breakpoint) {
       flex-basis: 45%;
     }
-  
     @media (min-width: v.$lg-breakpoint) {
       flex-basis: 30%;
     }
