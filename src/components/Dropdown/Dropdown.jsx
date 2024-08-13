@@ -1,7 +1,7 @@
 import { useState } from "react"
 import PropTypes from "prop-types"
 import "../Dropdown/dropdown.scss"
-import { IoIosArrowUp, IoIosArrowDown } from "react-icons/io";
+import { IoIosArrowUp} from "react-icons/io";
 
 const Dropdown = ({ title, content, items }) => {
     //état d'ouverture du dropdown
@@ -15,25 +15,23 @@ const Dropdown = ({ title, content, items }) => {
         <div className="dropdown">
             <button onClick={toggleDropdown} className="dropdown_btn">
                 {title}
-                <span className={isOpen ? "arrowDown" : "arrowUp"}>
-                    {isOpen ?  <IoIosArrowDown /> : <IoIosArrowUp />}
+                <span className={`arrow ${isOpen ? "rotated" : ""}`}>
+                    <IoIosArrowUp />
                 </span>
             </button>
-            {isOpen && (
-                <div className="dropdown_content">
-                {/* conditionnement si c'est juste un paragraphe ou un tableau d'élements */}
+            <div className={`dropdown_content ${isOpen ? "active" : ""}`}>
+                {/* conditionnement si c'est juste un paragraphe ou un tableau d'éléments */}
                 {content && <p>{content}</p>}
                 {items && (
                     <ul>
                         {items.map((item, index) => (
                             <li key={index} className="dropdown_item">
-                            {item}
+                                {item}
                             </li>
-                ))}
-                    </ul>    
+                        ))}
+                    </ul>
                 )}
-                </div>
-            )}
+            </div>
     </div>
     )
 }

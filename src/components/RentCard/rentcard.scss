@@ -1,6 +1,7 @@
 @use '../../stylesheet/variables' as v;
 
 .rent-card {
+    cursor: pointer;
     background-size: cover;
     background-position: center;
     width: 100%;
