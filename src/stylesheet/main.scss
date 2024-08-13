@@ -24,10 +24,16 @@
 
 .about_dropdowns{
   width: 100%;
-  height: fit-content;
+  height: 50vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  @media (min-width: v.$md-breakpoint) {
+    height: 45vh;
+  }
+  @media (min-width: v.$lg-breakpoint) {
+    height: 39vh;
+  }
 }
   
