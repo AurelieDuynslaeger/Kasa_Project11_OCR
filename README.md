@@ -54,7 +54,7 @@ Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec u
    
 3. Lancez le projet
     ```sh
-   npm start
+   npm run dev
    ```
   
 ## Contact
