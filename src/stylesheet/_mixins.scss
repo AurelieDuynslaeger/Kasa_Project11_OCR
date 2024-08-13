@@ -1,6 +1,5 @@
 @use "variables" as v;
 
-//mixin flex avec align-items center par défaut
 @mixin flex-center($justify: flex-start, $direction: row, $wrap: nowrap) {
     display: flex;
     flex-direction: $direction;
