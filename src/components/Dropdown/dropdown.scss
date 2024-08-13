@@ -1,22 +1,18 @@
 @use '../../stylesheet/variables' as v;
+@use '../../stylesheet/mixins' as m;
 
 .dropdown {
     width: 100%;
     margin: 1rem 0;
     .dropdown_btn {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
+        @include m.flex-center(space-between);
         width: 100%;
         padding: 1rem 1rem 1rem 0.5rem;
         background-color: v.$color-primary;
         border: none;
         border-radius: 5px;
         cursor: pointer;
-        font-size: 1.3rem;
-        font-weight: 700;
-        color: v.$text-light;
-        font-family: v.$font-montserrat;
+        @include m.typography(1.3rem, 700, v.$text-light);
         &:focus {
           outline: none;
         }
@@ -36,8 +32,7 @@
       margin: 0;
       padding: 0.75rem;
       background-color: v.$color-bg;
-      font-family: v.$font-montserrat;
-      font-size: 1.2rem;
+      @include m.typography(1.2rem, 400, v.$text-dark);
       border-radius: 5px;
       list-style: none;
       max-height: 0;

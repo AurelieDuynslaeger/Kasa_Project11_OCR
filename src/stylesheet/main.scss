@@ -1,5 +1,6 @@
 @use './variables' as v;
 @use "./reset";
+@use 'mixins' as m;
 
 .container{
   max-width: 1200px;
@@ -11,10 +12,7 @@
 }
 
 .rents_container{
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
+  @include m.flex-center(center, row, wrap);
   padding: 1rem 0;
   @media (min-width: v.$md-breakpoint) {
     background-color: v.$color-bg;

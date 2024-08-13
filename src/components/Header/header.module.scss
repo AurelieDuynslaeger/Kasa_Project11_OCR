@@ -1,9 +1,8 @@
 @use '../../stylesheet/variables' as v;
+@use '../../stylesheet/mixins' as m;
 
 header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    @include m.flex-center(space-between);
     padding: 1rem 2rem;
 }
 

@@ -1,19 +1,15 @@
 @use '../../stylesheet/variables' as v;
+@use '../../stylesheet/mixins' as m;
 
 .tag {
+    @include m.flex-center(center);
     width: fit-content;
     margin: 1rem 0;
     background-color: v.$color-primary;
     border-radius: 10px;
     padding: 0.5rem 1rem;
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
     p {
-      font-size: 1rem;
-      color: v.$text-light;
-      font-family: v.$font-montserrat;
-      font-weight: 600;
+      @include m.typography(1rem, 600, v.$text-light);
       margin: 0;
     }
     @media (min-width: v.$md-breakpoint) {
