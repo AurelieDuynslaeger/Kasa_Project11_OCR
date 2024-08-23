@@ -9,9 +9,9 @@ const NavLinks = () => {
             <NavLink 
               to="/"
               className={({ isActive }) => isActive ? styles.active : ""} 
-              //prop optionnel pour préciser que ce NavLink doit être considéré comme actif uniquement si la route correspond exactement (utile pour le lien de l'accueil /).
+              //prop optionnel pour préciser que ce NavLink doit être considéré comme actif uniquement si la route correspond exactement
               end>
-                acceuil
+                accueil
             </NavLink>
           </li>
           <li>
