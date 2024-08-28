@@ -1,4 +1,4 @@
-import { useParams, useNavigate } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import Dropdown from "../../components/Dropdown/Dropdown"
 import Tag from "../../components/Tag/Tag"
 import Rating from "../../components/Rating"
@@ -7,6 +7,7 @@ import Header from '../../components/Header/Header';
 import RentCarousel from '../../components/RentCarousel/RentCarousel';
 import Footer from '../../components/Footer/Footer';
 import "../RentDetail/rentdetail.scss"
+import NotFound from '../NotFound/NotFound';
 
 
 
@@ -16,15 +17,9 @@ const RentDetail = () => {
   //on recherche dans les logements, le logement en question pour utiliser ses infos sur la page de détail
   const rent = logements.find((item) => item.id === id);
 
-  const navigate = useNavigate();
 
-
-   //si le logement n'existe pas, on redirige l'user vers la 404
-   if (!rent) {
-    //remplace l'url par le catch-all
-    navigate('*', { replace: true });
-    //ne rend pas le composant si le logement n'existe pas
-    return null;
+  if (!rent) {
+    return <NotFound />;
   }
 
   return (
