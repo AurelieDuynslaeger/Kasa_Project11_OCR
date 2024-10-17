@@ -2,6 +2,13 @@
 @use "./reset";
 @use 'mixins' as m;
 
+#root{
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
 .container{
   max-width: 1200px;
   margin: 0 auto;
