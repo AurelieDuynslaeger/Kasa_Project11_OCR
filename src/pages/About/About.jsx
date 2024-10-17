@@ -2,7 +2,7 @@ import Dropdown from "../../components/Dropdown/Dropdown"
 import Header from "../../components/Header/Header"
 import ImgBanner from "../../components/ImgBanner/ImgBanner"
 import Footer from "../../components/Footer/Footer"
-import BannerAbout from "../../assets/banner_about/png"
+import BannerAbout from "../../assets/banner_about.png"
 
 const about_p = [
   {
