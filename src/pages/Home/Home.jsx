@@ -3,6 +3,7 @@ import ImgBanner from "../../components/ImgBanner/ImgBanner"
 import RentCard from "../../components/RentCard/RentCard"
 import Footer from "../../components/Footer/Footer"
 import logements from "../../constants/logements.json"
+import BannerHome from "../../assets/banner_home.png"
 
 import { useNavigate } from 'react-router-dom';
 
@@ -16,7 +17,7 @@ const Home = () => {
    
     <div className='container'>
       <Header/>
-      <ImgBanner imageUrl="../src/assets/banner_home.png" 
+      <ImgBanner imageUrl={BannerHome} 
       title="Chez vous, partout et ailleurs"/>
       <div className="main">
         <div className="rents_container">

@@ -2,6 +2,7 @@ import Dropdown from "../../components/Dropdown/Dropdown"
 import Header from "../../components/Header/Header"
 import ImgBanner from "../../components/ImgBanner/ImgBanner"
 import Footer from "../../components/Footer/Footer"
+import BannerAbout from "../../assets/banner_about/png"
 
 const about_p = [
   {
@@ -28,7 +29,7 @@ const About = () => {
      <div className='container'>
       <Header />
       <ImgBanner
-        imageUrl="../src/assets/banner_about.png"
+        imageUrl={BannerAbout}
         title=""
       />
       <div className="main">
