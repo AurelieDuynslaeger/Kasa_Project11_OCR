@@ -40,6 +40,10 @@ Le site de Kasa a été codé il y a maintenant plus de 10 ans en ASP.NET avec u
 [![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=white)](https://reactjs.org/)
 [![Sass](https://img.shields.io/badge/Sass-CC6699?style=for-the-badge&logo=sass&logoColor=white)](https://sass-lang.com/)
 
+## Démo
+
+[ici!](https://ocr-kasa.vercel.app/)
+
 ## Installation
 
 1. Clonez le repository de l'application
